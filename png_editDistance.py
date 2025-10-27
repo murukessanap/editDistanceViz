@@ -54,7 +54,7 @@ def createGIF(m,n,tmp,gif_name,d):
 
     # --- CREATE GIF ---
     images = [imageio.imread(f) for f in frames]
-    imageio.mimsave(gif_name, images, duration=800)  # 0.5 sec per frame
+    imageio.mimsave(gif_name, images, duration=800, loop=0)  # 0.5 sec per frame
 
     print(f"🎬 GIF saved as '{gif_name}'")
 
